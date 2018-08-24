@@ -2,6 +2,12 @@ h1 {
   color: #2761f1;
 }
 
+body {
+  /* background-image: url("./images/3132.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .right.floated.row {
   margin-top: 20px;
 }
