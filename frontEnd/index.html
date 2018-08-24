@@ -13,29 +13,33 @@
   </head>
   <body>
 
+<div id="home">
     <!-- name area -->
     <div class="ui grid centered">
-
       <div class="right floated row">
         <!-- <div class="right floated column"> -->
           <div class="field" id="login">
               <div class="ui left icon input">
                 <input id="first_name" type="text" placeholder="Username" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;); cursor: auto;">
                 <i class="user icon"></i>
-                <button id= "login-button" class="ui primary button">
+                <button id="login-button" class="ui primary button">
                 Login/Signup
                 </button>
               </div>
           </div>
-        <!-- </div> -->
+      </div>
+
+      <div id= "message" class= "ui container">
+      </div>
+
+      <div class="ui two item menu">
+        <a id= "home" class="active item">Home</a>
+        <a id="food-tracker" class="item">Food Tracker</a>
       </div>
 
 
 
-<!-- adds new container -->
-
-  <div class="six wide column">
-    <!-- <div class="ui container" id="form-container"><br> -->
+  <div id= "form-column" class="six wide column">
     <h1>Welcome To Your Nutrition Tracker</h1>
 
     <div class="ui form">
@@ -116,59 +120,62 @@
 
 
     <!-- showbmr -->
-  <div class="eight wide column">
+  <div id="numbers-column" class="eight wide column">
     <div id="show-bmr">
     </div>
   </div>
 
     <!-- new container ends here 2 divs -->
 
-    <div class="ui twelve wide column centered row" id="body-type-container">
+    <div id="body-type-container" class="ui twelve wide column centered row">
 
     <h1 id="select-body-title">Select your body type to calculate your macronutrients</h1><br>
 
   <div class="ui link cards">
   <div id="ectomorph" class="card">
-    <div class="image">
+    <div id="ecto-image" class="image">
       <img src="./images/ecto.jpg">
     </div>
-    <div class="content">
-      <div class="header">Ectomorph</div>
-      <div class="description">
+    <div id="ecto-title" class="content">
+      <div id="ecto-to-clear" class="header">Ectomorph</div>
+      <div id="ecto-description" class="description">
         Naturally thin, with a fast metabolic rate.
       </div>
     </div>
-
   </div>
   <div id="mesomorph" class="card">
-    <div class="image">
+    <div id="meso-image" class="image">
       <img src="./images/endo.jpg">
     </div>
-    <div class="content">
-      <div class="header">Mesomorph</div>
-      <div class="description">
+    <div id="meso-title" class="content">
+      <div id="meso-to-clear" class="header">Mesomorph</div>
+      <div id="meso-description" class="description">
         Naturally muscular and athletic with a moderate metabolic rate.
       </div>
     </div>
-
   </div>
+
   <div id="endomorph" class="card">
-    <div class="image">
+    <div id="endo-image" class="image">
       <img src="./images/meso.jpg">
     </div>
-    <div class="content">
-      <div class="header">Endomorph</div>
-      <div class="description">
-        Naturally broad and thick with slow metabolic rate.
-      </div>
+    <div id="endo-title" class="content">
+      <div id="endo-to-clear" class="header">Endomorph</div>
+        <div id="endo-description" class="description">
+          Naturally broad and thick with slow metabolic rate.
+        </div>
     </div>
   </div>
 
+    <div class="eight wide column">
+      <div id="macros" class="ui container">
+      </div>
+    </div>
 
-<div id="macros" class="container">
+  </div>
 </div>
 
-</div>
+<!-- <div id="container"></div> -->
 
 
 <script type="text/javascript" src="src/index.js">

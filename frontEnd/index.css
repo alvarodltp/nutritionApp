@@ -1,48 +1,55 @@
 h1 {
-  color: gray;
+  color: #2761f1;
 }
 
 .right.floated.row {
   margin-top: 20px;
 }
 
-/* #form-container {
-  margin: auto;
-  width: 25%;
-  padding: 10px;
-  float: left;
-} */
-
-/* .ui.container {
-  clear: both;
-} */
-
-/* #login {
-  margin-top: 15px;
-  margin-right: 20px;
-  position: relative;
-  float: right;
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 100px;
 }
 
-.ui.form {
-  margin-top: 20px;
+#login-button {
+  background-color: #e80aaa;
 }
 
-.container.select {
-  margin-top: 20px;
+#calculate-button {
+  background-color: #e80aaa;
 }
 
-.ui.buttons {
-  margin-top: 20px;
-}
-
-#body-type-container {
-  margin: auto;
-  width: 80%;
-  padding: 10px;
-}
-
-#select-body-title {
-  margin-top: 20px;
+.h1-bmr {
+  font-size: 50px;
   text-align: center;
+}
+
+.h1-calories {
+  font-size: 50px;
+  text-align: center;
+}
+
+.message-text {
+  font-style: italic;
+  color: lightgreen;
+}
+
+.protein-text {
+  font-size: 50px;
+  text-align: center;
+}
+
+.carbs-text {
+  font-size: 50px;
+  text-align: center;
+}
+
+.fats-text {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* #home {
+  display: none;
 } */
