@@ -1,0 +1,48 @@
+h1 {
+  color: gray;
+}
+
+.right.floated.row {
+  margin-top: 20px;
+}
+
+/* #form-container {
+  margin: auto;
+  width: 25%;
+  padding: 10px;
+  float: left;
+} */
+
+/* .ui.container {
+  clear: both;
+} */
+
+/* #login {
+  margin-top: 15px;
+  margin-right: 20px;
+  position: relative;
+  float: right;
+}
+
+.ui.form {
+  margin-top: 20px;
+}
+
+.container.select {
+  margin-top: 20px;
+}
+
+.ui.buttons {
+  margin-top: 20px;
+}
+
+#body-type-container {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+#select-body-title {
+  margin-top: 20px;
+  text-align: center;
+} */
