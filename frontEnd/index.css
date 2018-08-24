@@ -50,6 +50,7 @@ h1 {
   text-align: center;
 }
 
-/* #home {
-  display: none;
-} */
+#delete-account {
+  font-style: red;
+  margin-top: 5px;
+}

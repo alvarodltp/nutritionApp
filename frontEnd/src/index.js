@@ -4,12 +4,13 @@ function init() {
   disablePage();
 }
 
-let homePageDiv = document.getElementById("home");
-let homeButton = document.getElementById("home-button");
+// let homePageDiv = document.getElementById("home");
+// let homeButton = document.getElementById("home-button");
 // homeButton.addEventListener("click", showHome);
-let foodTrackerButton = document.getElementById("food-tracker");
-foodTrackerButton.addEventListener("click", showCalendarPage);
-
+// let foodTrackerButton = document.getElementById("food-tracker");
+// foodTrackerButton.addEventListener("click", showCalendarPage);
+let deleteButton = document.getElementById("delete-account");
+deleteButton.addEventListener("click", deleteAccount);
 let firstNameField = document.getElementById("first_name").value;
 let activityLevel = parseFloat(document.getElementById("activity-level").value);
 let calculateButton = document.getElementById("calculate-button");
@@ -376,6 +377,18 @@ function updateUser(event) {
   // .then(json => {});
 }
 
-function showCalendarPage(event) {
-  homePageDiv.style.display = "none";
+function deleteAccount(event) {
+  let id = document.getElementById("id").value;
+  fetch(`http://localhost:3000/users/${id}`, {
+    method: "DELETE"
+  })
+    .then(response => response.json())
+    .then(json => {
+      // debugger;
+      disablePage();
+    });
 }
+
+// function showCalendarPage(event) {
+//   homePageDiv.style.display = "none";
+// }
